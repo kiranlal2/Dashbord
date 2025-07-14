@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #e317c2;
+    --secondary-color: #f79c07;
+    --tertiary-color: #00fe1d;
+    --quaternary-color: #b3d102;
+    --bg-white: #ffffff;
+    --bg-gray: #ebebeb;
+    --text-color: #414141;
+    --font-family: 'Arial', sans-serif;
+    --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
