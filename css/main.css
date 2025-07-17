@@ -1,0 +1,120 @@
+@import url('./variables.css');
+
+.dashboard-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 100px; */
+    padding: 0 30px 30px 30px;
+    width: 100%;
+}
+
+.cards-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: calc(100vh - 100px);
+    overflow-y: auto; /* enables scroll */
+    padding: 30px;
+    background-color: rgba(83, 83, 83, 16%);
+    border-radius: 20px;
+    margin-top: 120px;
+}
+
+
+.profile-card, .card-body {
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    height: auto;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card img {
+    /* width: 120px; */
+    height: 300px;
+    border-radius: 5%;
+    filter: sepia(100%);
+    padding-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.profile-info .fa-solid {
+    padding-left: 20px;
+    color: #00f45d;
+}
+.stats-item .fa-solid {
+    padding-right: 20px;
+    color: #00f45d;
+}
+
+.stats-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.card-title .fa-solid {
+    padding-right: 10px;
+}
+
+.bill-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.name-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-shapes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background-image: url('../assets/bg_img.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: -1;
+    pointer-events: none; /* So it doesn't interfere with clicks */
+    opacity: 0.9;
+}

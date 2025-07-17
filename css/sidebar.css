@@ -1,1 +1,50 @@
 @import url('./variables.css');
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    width: 300px;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-list .fa-solid {
+    padding-right: 10px;
+}
+
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.sidebar .logo img {
+    height: 100px;
+}
+.sidebar .menu-title {
+    display: flex;
+    align-items: center;
+}
+.sidebar .menu-title img {
+    height: 40px;
+    padding-right: 10px;
+}

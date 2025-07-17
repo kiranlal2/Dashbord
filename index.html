@@ -4,19 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Finance Dashboard</title>
+    <!-- Fountawsome -->
+    <script src="https://kit.fontawesome.com/f9a681a093.js" crossorigin="anonymous"></script>
+
     <!-- styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/sidebar.css">
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
     <div class="dashboard-content">
-        <div class="sidebar"></div>
+        <section class="sidebar"></section>
         <main class="main-content">
-            <div class="header"></div>
+            <header class="header"></header>
+            <div class="cards-content">
+                <section class="profile-card">
+                    <img src="assets/profile.webp" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-info">
+                        <h2>My Profile</h2>
+                        <div class="name-contact">
+                            <p>Kiran lal</p>
+                            <p>+91 9790652026</p>
+                        </div>
+                        <p>kiranlal6dx@gmail.com</p>
+                        <p>SMS Alert Activation <i class="fa-solid fa-circle"></i></p>
+                    </div>
+                    <button class="primary-btn">SAVE</button>
+                </section>
+                <section class="stats-card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>My xPay Account</h3>
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <button class="tertiary-btn">Edit</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bill-stats">
+                            <div class="stats-item">
+                                <p>Active Account</p>
+                                <button class="primary-btn">Block Account</button>
+                            </div>
+                            <div class="stats-item">
+                                <p>Blacked Account</p>
+                                <button class="secondary-btn">UnBlock Account</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>My Bills</h3>
+                            <button class="tertiary-btn">Filter</button>
+                        </div>
+                        <hr>
+                        <div class="bill-stats">
+                            <div class="stats-item">
+                                <p><i class="fa-solid fa-circle"></i> Phone Bill</p>
+                                <button class="primary-btn">Bill Paid</button>
+                            </div>
+                            <div class="stats-item">
+                                <p><i class="fa-solid fa-circle"></i> Internet Bill</p>
+                                <button class="secondary-btn">Not paid</button>
+                            </div>
+                            <div class="stats-item">
+                                <p><i class="fa-solid fa-circle"></i> House Rent</p>
+                                <button class="primary-btn">Bill Paid</button>
+                            </div>
+                            <div class="stats-item">
+                                <p><i class="fa-solid fa-circle"></i> Income Tax</p>
+                                <button class="secondary-btn">Bill Paid</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="bg-shapes"></div>
         </main>
-
     </div>
     
     <script src="./js/main.js"></script>
